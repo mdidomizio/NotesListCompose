@@ -1,17 +1,16 @@
 package com.example.composesevennoteapp.screen
 
+import androidx.compose.runtime.mutableStateListOf
 import androidx.lifecycle.ViewModel
 import com.example.composesevennoteapp.data.NoteDataSource
 import com.example.composesevennoteapp.model.Note
 
 class NoteViewModel: ViewModel() {
-    private var noteList = mutableListOf<Note>()
+    private var noteList = mutableStateListOf<Note>()
 
-    init {
+   init {
         noteList.addAll(NoteDataSource().loadNotes())
     }
-
-
 
     fun addNote(note: Note){
         noteList.add(note)
