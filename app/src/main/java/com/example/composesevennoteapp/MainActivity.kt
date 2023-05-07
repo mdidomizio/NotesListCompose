@@ -13,7 +13,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.composesevennoteapp.screen.NoteScreen
 import com.example.composesevennoteapp.screen.NoteViewModel
 import com.example.composesevennoteapp.ui.theme.ComposeSevenNoteAppTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
