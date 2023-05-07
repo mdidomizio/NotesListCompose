@@ -62,9 +62,20 @@ dependencies {
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_ui_version"
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
-    //implementation hilt and dagger
+
+    //hilt and dagger
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-compiler:$hilt_version"
+
+    //Room
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    //Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlin-coroutines-core:1.5.2'
+    implementation 'org.jetbrains.kotlinx:kotlin-coroutines-android:1.5.2'
+    implementation 'org.jetbrains.kotlinx:kotlin-coroutines-play-service:1.5.2'
+
     // installing viewModel for compose
    // implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1"
 }
